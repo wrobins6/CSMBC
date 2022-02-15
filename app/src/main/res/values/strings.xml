@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">CSMBC</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="convert">Convert</string>
+    <string name="input">Input</string>
+    <string name="result">Result</string>
+    <string name="output">Output</string>
+    <string name="base_hint">Number Here</string>
+    <string name="morse_hint">Text Here</string>
+    <string-array name="base_array">
+        <item>Binary</item>
+        <item>Hexadecimal</item>
+        <item>Decimal</item>
+    </string-array>
+    <string-array name="output_array1">
+        <item>Flashlight</item>
+        <item>Vibration</item>
+        <item>Flashlight+Vibration</item>
+    </string-array>
+    <string-array name="output_array2">
+        <item>Flashlight</item>
+        <item>Vibration</item>
+    </string-array>
+    <string name="output_cancel">Cancel</string>
+    <string name="output_confirm">Confirm</string>
+    <string name="appbar_information">Information</string>
+    <string name="appbar_about">About</string>
+    <string name="container_title1">Information</string>
+    <string name="container_title2">About</string>
+    <string name="about_application_credits">Application Credits</string>
+    <string name="about_special_thanks">Special Thanks</string>
+    <string name="about_role1">Programming</string>
+    <string name="about_role2">Layout Design</string>
+    <string name="about_role3">Additional Ideas</string>
+    <string name="about_role4">Emotional Support</string>
+    <string name="about_credit_william">William Robinson</string>
+    <string name="about_credit_paul">Paul Iradi</string>
+    <string name="about_credit_fintan">Fintan Neff</string>
+    <string name="about_credit_sebastian">Sebastian Goyette-Connerty</string>
+    <string name="info_b2h_title">Binary To Hexadecimal</string>
+    <string name="info_b2h_example1"><b>Ex.</b> 11011010</string>
+    <string name="info_b2h_step1"><b>1.</b> Split the binary number into two four bit sections. If the binary number is less than eight bits total, add leading zeros:</string>
+    <string name="info_b2h_example2"><b>Ex.</b> 1101  1010</string>
+    <string name="info_b2h_step2"><b>2.</b> Replace the four bit binary sections with the corresponding hexadecimal symbols:</string>
+    <string name="info_b2h_example3"><b>Ex.</b> DA</string>
+    <string name="info_b2d_title">Binary To Decimal</string>
+    <string name="info_b2d_example1"><b>Ex.</b> 11011010</string>
+    <string name="info_b2d_step1"><b>1.</b> If the binary number is less than eight bits total, add padding zeros. Then inspect the leftmost bit. 0 means positive, 1 means negative:</string>
+    <string name="info_b2d_example2"><b>Ex.</b> 1 (negative)</string>
+    <string name="info_b2d_step2"><b>2.</b> Multiply each bit by the corresponding power of two, then sum the results. The leftmost bit determines the sign of the leftmost power of two:</string>
+    <string name="info_b2d_example3"><b>Ex.</b> ((1*-2^7) + (1*2^6) + (0*2^5) + (1*2^4) + (1*2^3) + (0*2^2) + (1*2^1) + (0*2^0)) = -38</string>
+    <string name="info_h2b_title">Hexadecimal To Binary</string>
+    <string name="info_h2b_example1"><b>Ex.</b> DA</string>
+    <string name="info_h2b_step1"><b>1.</b> Split the hexadecimal number into two sections. If the hexadecimal number is less than two digits, add a leading zero:</string>
+    <string name="info_h2b_example2"><b>Ex.</b> D  A</string>
+    <string name="info_h2b_step2"><b>2.</b> Replace the two sections with the corresponding binary numbers:</string>
+    <string name="info_h2b_example3"><b>Ex.</b> 11011010</string>
+    <string name="info_h2d_title">Hexadecimal To Decimal</string>
+    <string name="info_h2d_example1"><b>Ex.</b> DA</string>
+    <string name="info_h2d_step1"><b>1.</b> Follow \"Hexadecimal To Binary\":</string>
+    <string name="info_h2d_example2"><b>Ex.</b> 11011010</string>
+    <string name="info_h2d_step2"><b>2.</b> Follow \"Binary To Decimal\":</string>
+    <string name="info_h2d_example3"><b>Ex.</b> -38</string>
+    <string name="info_d2b_title">Decimal To Binary</string>
+    <string name="info_d2b_example1"><b>Ex.</b> -38</string>
+    <string name="info_d2b_step1"><b>1.</b> Inspect the sign, which will determine the sign and bit for the leftmost power of two:</string>
+    <string name="info_d2b_example2"><b>Ex.</b> - (negative)</string>
+    <string name="info_d2b_step2"><b>2.</b> If the sign is negative, make the leftmost power of two negative, and mark it as a 1. Then from left to right, find the largest powers of two that fit into the decimal number, and mark them with a 1. Mark powers of two that do not fit with a 0:</string>
+    <string name="info_d2b_example3"><b>Ex.</b> (-2^7 = -128 (1), 2^6 = 64 (1), 2^5 = 32 (0), 2^4 = 16 (1), 2^3 = 8 (1), 2^2 = 4 (0), 2^1 = 2 (1), 2^0 = 1 (0)) = 11011010</string>
+    <string name="info_d2h_title">Decimal To Hexadecimal</string>
+    <string name="info_d2h_example1"><b>Ex.</b> -38</string>
+    <string name="info_d2h_step1"><b>1.</b> Follow \"Decimal To Binary\":</string>
+    <string name="info_d2h_example2"><b>Ex.</b> 11011010</string>
+    <string name="info_d2h_step2"><b>2.</b> Follow \"Binary To Hexadecimal\":</string>
+    <string name="info_d2h_example3"><b>Ex.</b> DA</string>
+</resources>

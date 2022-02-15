@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OutputFragment"
+    android:stretchColumns="*">
+
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/outputTitleTextViewID"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_span="2"
+            android:text="@string/output"
+            android:textSize="24sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="30dp">
+
+        <Spinner
+            android:id="@+id/outputModeSpinnerID"
+            style="@android:style/Widget.Material.Light.Spinner.Underlined"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_span="2"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:id="@+id/outputCancelButtonID"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/output_cancel" />
+
+        <Button
+            android:id="@+id/outputConfirmButtonID"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="@string/output_confirm" />
+    </TableRow>
+
+</TableLayout>

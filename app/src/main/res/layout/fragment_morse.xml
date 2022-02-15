@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MorseFragment">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:id="@+id/morseInputTextViewID"
+                android:layout_width="0dp"
+                android:text="@string/input"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/morseResultTextViewID"
+                android:layout_width="0dp"
+                android:text="@string/result"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="30dp">
+
+            <EditText
+                android:id="@+id/morseInputEditTextID"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:digits="abcdefghijklmnopqrstuvwxyz 0123456789"
+                android:ems="10"
+                android:hint="@string/morse_hint"
+                android:inputType="textPersonName"
+                android:maxLength="100"
+                android:singleLine="true" />
+
+            <HorizontalScrollView
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/morseOutputTextViewID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </HorizontalScrollView>
+
+        </TableRow>
+        <!--lol -->
+        <TableRow
+            android:layout_marginTop="102.5dp">
+
+            <Button
+                android:id="@+id/morseConvertButtonID"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:layout_width="0dp"
+                android:text="@string/convert" />
+
+            <Button
+                android:id="@+id/morseOutputButtonID"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:layout_width="0dp"
+                android:text="@string/output" />
+        </TableRow>
+
+    </TableLayout>
+
+</ScrollView>
